@@ -5,7 +5,7 @@ import sys
 
 
 def main():
-	print('hello')
+    print('hello')
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'zoirinth_scores.settings')
     try:
         from django.core.management import execute_from_command_line

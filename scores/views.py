@@ -7,5 +7,5 @@ from .models import Score
 
 
 class ScoreViewSet(viewsets.ModelViewSet):
-    queryset = Score.objects.all().order_by('level')
+    queryset = Score.objects.all().order_by('-level', '-points')[:20]
     serializer_class = ScoreSerializer
